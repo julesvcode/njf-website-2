@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #333333;
+    --secondary-color: #E54641;
+    --text-color-white: #ffffff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-color);
+}
+
+body {
+    background-image: url("./assets/paper__texture__bg__100.png");
+    background-blend-mode: multiply;
+}
+
+header, section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* NAVBAR */
+.nav {
+    height: 15vh;
+    display: flex;
+}
+
+.nav__logo {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo__image {
+    width: 4rem;
+    height: auto;
+    padding: 0 .5rem;
+}
+
+.nav__menu {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav__menu__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-weight: bold;
+}
+
+.nav__menu__item {
+    width: fit-content;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    padding: .75rem 1.25rem;
+}
+
+.cta {
+    background-color: var(--secondary-color);
+    border: 1px solid #E54641;
+    border-radius: 4px;
+    color: var(--text-color-white);
+    margin-left: 0.725rem;
+}
+
+/* HERO SECTION */
+
+.hero {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero__text {
+    flex-basis: 50%;
+}
+
+.hero__text__description {
+    padding: 1rem 0;
+}
+
+.text--highlight {
+    color: var(--secondary-color);
+    font-size: 3rem;
+}
+
+.hero__image {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.hero__image__vinyl {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+/* ABOUT */
+
+.about {
+    height: 40vh;
+    text-align: center;
+}
+
+.about__text {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.about__logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;;
+}
+
+.about__logo img {
+    max-width: 200px;
+}
+
+/* SIGNUP */
+
+.signup {
+    background-color: var(--secondary-color);
+    min-width: 100%!important;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.signup__text {
+    max-width: 50%;
+    margin: 0 auto;
+    color: var(--text-color-white);
+    padding: 1.5rem 0;
+}
+
+.signup__form {
+    padding: 1.5rem 0;
+}
