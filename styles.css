@@ -26,6 +26,7 @@ header, section {
     padding: 0 3rem;
 }
 
+
 h1 {
     font-size: 3rem;
 }
@@ -36,6 +37,10 @@ h2 {
 
 p {
     font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* NAVBAR */
@@ -82,8 +87,11 @@ p {
     background-color: var(--secondary-color);
     border: 1px solid #E54641;
     border-radius: 4px;
-    color: var(--text-color-white);
     margin-left: 0.725rem;
+}
+
+.cta a {
+    color: var(--text-color-white);
 }
 
 /* HERO SECTION */
@@ -120,12 +128,12 @@ p {
 /* ABOUT */
 
 .about {
-    height: 40vh;
     text-align: center;
+    padding: 5rem 0;
 }
 
 .about__text {
-    max-width: 70%;
+    max-width: 60%;
     margin: 0 auto;
 }
 
@@ -133,7 +141,9 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 0;;
+    padding: 3rem 0;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .about__logo img {
@@ -157,5 +167,19 @@ p {
 }
 
 .signup__form {
+    padding: 1.5rem 0;
+}
+
+/* FAQ */
+
+.faq {
+    min-width: 100%!important;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.faq__header {
+    max-width: 50%;
+    margin: 0 auto;
     padding: 1.5rem 0;
 }

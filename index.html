@@ -20,9 +20,9 @@
                 </div>
                 <div class="nav__menu">
                     <ul class="nav__menu__items">
-                        <li class="nav__menu__item">About Us</li>
-                        <li class="nav__menu__item">FAQ</li>
-                        <li class="nav__menu__item cta">Sign Up</li>
+                        <li class="nav__menu__item"><a href="#about">About Us</a></li>
+                        <li class="nav__menu__item"><a href="#faq">FAQ</a></li>
+                        <li class="nav__menu__item cta"><a href="#signup">Sign Up</a></li>
                     </ul>
 
                 </div>
@@ -58,32 +58,44 @@
                     <img src="./assets/hero__logo.png" alt="New Jobs Friday UK logo" class="hero__image__vinyl">
                 </div>
             </section>
-            <section class="about">
+            <section id="about" class="about">
                 <h2 class="about__text">
                     We list offers from job boards across the UK Music industry, including:
                 </h2>
                 <div class="about__logos">
                     <div class="about__logo">
-                        <img src="./assets/logos/mbw.png" alt="">
+                        <a href="https://www.musicbusinessworldwide.com/" target="_blank">
+                            <img src="./assets/logos/mbw.png" alt="">
+                        </a>
                     </div>
                     <div class="about__logo">
-                        <img src="./assets/logos/music__week.png" alt="">
+                        <a href="https://www.musicweek.com/" target="_blank">
+                            <img src="./assets/logos/music__week.png" alt="">
+                        </a>
                     </div>
                     <div class="about__logo">
-                        <img src="./assets/logos/doors__open.png" alt="">
+                        <a href="https://www.doorsopen.co/" target="_blank">
+                            <img src="./assets/logos/doors__open.png" alt="">
+                        </a>
                     </div>
                     <div class="about__logo">
-                        <img src="./assets/logos/the__dots.png" alt="">
+                        <a href="https://the-dots.com/" target="_blank">
+                            <img src="./assets/logos/the__dots.png" alt="">
+                        </a>
                     </div>
                 </div>
             </section>
-            <section class="signup">
+            <section id="signup" class="signup">
                 <h2 class="signup__text">
                     Get the latest UK Music job offers in your inbox every Friday at 12pm GMT.
                 </h2>
                 <div class="signup__form">
-                    <iframe id="iframe-id" src="https://newjobsfridayuk.substack.com/embed" width="480" height="120" style="border:0px solid #EEE; background:#E54641;" frameborder="0" scrolling="no"></iframe>
+                    <iframe id="iframe" src="https://newjobsfridayuk.substack.com/embed" width="480" height="70" style="border:0px;background-color:#E54641;border-radius: 10px;padding-top: -2rem;" frameborder="0" scrolling="no"></iframe>
                 </div>
+            </section>
+            <section id="faq" class="faq">
+                <h2 class="faq__header">F.A.Q</h2>
+                <div class="faq__questions"></div>
             </section>
         </main>
         <footer class="footer">
