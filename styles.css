@@ -25,10 +25,18 @@ body {
     background-blend-mode: multiply;
 }
 
-header, section {
+header, main {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 3rem;
+}
+
+@media (max-width: 999px) {
+    header, main {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
 }
 
 
@@ -58,9 +66,20 @@ a {
 }
 
 /* NAVBAR */
-.nav {
-    height: 15vh;
+
+header {
+    width: 100%;
     display: flex;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 .5rem;
 }
 
 .nav__logo {
@@ -69,10 +88,13 @@ a {
     align-items: center;
 }
 
+.nav__logo h2 {
+    padding-left: .5rem;
+}
+
 .nav__logo__image {
     width: 4rem;
     height: auto;
-    padding: 0 .5rem;
 }
 
 .nav__menu {
@@ -106,6 +128,60 @@ a {
 
 .cta a {
     color: var(--text-color-white);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5vh;
+    height: 2rem;
+}
+
+.toggle-button .bar {
+    height: .2rem;
+    width: 100%;
+    background-color: #333333;
+    border-radius: 3px;
+}
+
+@media (max-width: 999px) {
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav__menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 3rem;
+        background-color: rgba(236, 236, 236, 0.9);
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav__menu__items {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav__menu.active {
+        display: flex;
+    }
+
+    .nav__menu__items {
+        padding: 1rem 0;
+    }
 }
 
 /* HERO SECTION */
