@@ -489,6 +489,25 @@ footer {
     }
 }
 
+
+/* ADDITIONAL PAGES */
+
+.page {
+    display: flex;
+    margin: 3rem 0;
+    gap: 1rem;
+    min-height: 100vh;
+}
+
+.page__column-left {
+    flex: 2;
+}
+
+.page__column-right {
+    background-color: blue;
+    flex: 1;
+}
+
 /* LISTING PAGE */
 
 .joblisting {
