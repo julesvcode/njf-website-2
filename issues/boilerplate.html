@@ -55,50 +55,32 @@
                 </div>
                 <div class="nav__menu">
                     <ul class="nav__menu__items">
-                        <li class="nav__menu__item"><a href="#about">About Us</a></li>
-                        <li class="nav__menu__item"><a href="#faq">FAQ</a></li>
-                        <li class="nav__menu__item cta"><a href="#signup">Sign Up</a></li>
+                        <li class="nav__menu__item"><a href="/jobs.html">Jobs</a></li>
+                        <li class="nav__menu__item"><a href="/#about">About Us</a></li>
+                        <li class="nav__menu__item"><a href="/#faq">FAQ</a></li>
+                        <li class="nav__menu__item cta"><a href="/#signup">Sign Up</a></li>
                     </ul>
 
                 </div>
             </nav>
         </header>
         <main class="main">
-            <section class="issue">
-                <div class="issue__left">
-                    <h3><br />🖥&nbsp;Marketing / Digital Marketing</h3>
-                    <blockquote>
-                        <p>
-                            <strong>DIGITAL MARKETING MANAGER</strong><br />
-                            🏢 ROBOMAGIC LIVE<br />
-                            📍 London<br />
-                            <strong><a href="https://www.musicbusinessworldwide.com/jobs/robomagic-digital-marketing-manager-uk/">
-                                👉 Read more &amp; apply here
-                            </a></strong>
-                        </p>
-                    </blockquote>
-                    <blockquote>
-                        <p>
-                            <strong>DIGITAL MARKETING MANAGER</strong><br />
-                            🏢 ROBOMAGIC LIVE<br />
-                            📍 London<br />
-                            <strong><a href="https://www.musicbusinessworldwide.com/jobs/robomagic-digital-marketing-manager-uk/">
-                                👉 Read more &amp; apply here
-                            </a></strong>
-                        </p>
-                    </blockquote>
-                    <blockquote>
-                        <p>
-                            <strong>DIGITAL MARKETING MANAGER</strong><br />
-                            🏢 ROBOMAGIC LIVE<br />
-                            📍 London<br />
-                            <strong><a href="https://www.musicbusinessworldwide.com/jobs/robomagic-digital-marketing-manager-uk/">
-                                👉 Read more &amp; apply here
-                            </a></strong>
-                        </p>
-                    </blockquote>
+            <section class="page issue">
+                <div class="page__column-left">
+                    <h2>Issue #06 - July 29th, 2022</h2>
+                    <!-- ADD CODE FROM EXPORT BELOW -->
+                    <!-- ADD CODE FROM EXPORT ABOVE -->
                 </div>
-                <div class="issue__right">Right</div>
+                <div class="page__column-right">
+                    <div class="signup__box">
+                        <h3 class="signup__box-text">
+                            Get the latest UK Music job offers in your inbox every Friday at 12pm GMT.
+                        </h3>
+                        <div class="signup__box-form">
+                            <iframe id="iframe" src="https://newjobsfridayuk.substack.com/embed" width="100%" height="80px" style="border:0px;" frameborder="0" scrolling="no"></iframe>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="footer">
@@ -117,5 +99,12 @@
         </footer>
         
         <script src="./app.js"></script>
+
+        <script>
+            let joblinks = document.querySelectorAll("blockquote a")
+            for (let i = 0; i < joblinks.length; i++) {
+                joblinks[i].setAttribute('target', '_blank')
+            }
+        </script>
     </body>
 </html>

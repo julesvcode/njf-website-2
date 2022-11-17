@@ -136,7 +136,9 @@ header {
     color: var(--text-color-white);
 }
 
-@media (max-width: 999px) {
+
+
+@media (max-width: 640px) {
     h2 {
         font-size: 1.5rem;
     }
@@ -148,23 +150,17 @@ header {
     .nav {
         padding: 0;
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav__menu {
-        display: none;
-        width: 100%;
-        height: 90vh;
-        position: absolute;
-        top: 4rem;
-        background-color: rgba(236, 236, 236, 1);
-        z-index: 2;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     .nav__menu__items {
-        flex-direction: column;
         justify-content: flex-end;
         width: 100%;
+    }
+
+    .nav__menu__item:last-child {
+        display: none;
     }
 
     .nav__menu.active {
@@ -173,6 +169,20 @@ header {
 
     .nav__menu__items {
         padding: 1rem 0;
+    }
+}
+
+@media (max-width: 999px) {
+    .nav__logo h2 {
+        font-size: 1.25rem;
+    }
+
+    .nav__logo {
+        flex-basis: 40%;
+    }
+
+    .nav__menu {
+        flex-basis: 60%;
     }
 }
 
@@ -490,7 +500,7 @@ footer {
 }
 
 
-/* ADDITIONAL PAGES */
+/* ADDITIONAL PAGES LAYOUT */
 
 .page {
     display: flex;
@@ -504,8 +514,48 @@ footer {
 }
 
 .page__column-right {
-    background-color: blue;
     flex: 1;
+}
+
+.signup__box {
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 1rem;
+}
+
+.signup__box-text {
+    color: var(--text-color-white);
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1rem 0 2rem;
+}
+
+.signup__box-form {
+    padding-top: 1.5rem!important;
+    background-color: var(--text-color-white);
+    border-radius: .5rem;
+}
+
+.signup__box-form iframe {
+    text-align: center;
+    border-radius: 1rem;
+}
+
+@media only screen and (max-width: 999px) {
+    .page {
+        flex-direction: column;
+    }
+
+    .page__column-left, .page__column-right {
+        flex: 1;
+    }
+
+    .page__column-right {
+        margin-top: 2rem;
+    }
 }
 
 /* LISTING PAGE */
@@ -547,7 +597,7 @@ footer {
     .listing {
         flex-direction: column;
         align-items: flex-start;
-        padding: 0;
+        padding: 1rem 0 0;
     }
 
     .listing__title {
@@ -570,19 +620,12 @@ footer {
 
 /* ISSUE PAGE */
 
-.issue {
-    display: flex;
-    margin: 3rem 0;
-    gap: 1rem;
+.issue h2 {
+    font-size: 2rem;
 }
 
-.issue__left {
-    flex: 2;
-}
-
-.issue__right {
-    background-color: blue;
-    flex: 1;
+.issue h3 {
+    padding-top: 2rem;
 }
 
 blockquote {
@@ -605,6 +648,9 @@ blockquote a {
     color: var(--text-color-white);
 }
 
+hr {
+    display: none;
+}
 
 @media only screen and (max-width: 640px) {
     .issue {
