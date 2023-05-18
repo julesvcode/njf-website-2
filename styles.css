@@ -2,6 +2,8 @@
     --primary-color: #333333;
     --secondary-color: #E54641;
     --text-color-white: #ffffff;
+
+    font-size: 16px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
@@ -11,7 +13,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
     font-family: 'Inter', Arial, sans-serif;
     color: var(--primary-color);
 }
@@ -207,6 +208,7 @@ header {
 
 .hero__text__description {
     padding: 1rem 0;
+    text-align: left;
 }
 
 .text--highlight {
