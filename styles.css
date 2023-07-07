@@ -637,7 +637,7 @@ blockquote {
 
 blockquote strong, blockquote p, blockquote a {
     font-size: 1.25rem;
-    line-height: 1.75rem;
+    line-height: 2rem;
 }
 
 blockquote a {
