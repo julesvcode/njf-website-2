@@ -136,12 +136,18 @@ header {
 
 @media (max-width: 640px) {
 
+    header {
+        height: 13vh;
+        margin-top: 1rem;
+    }
+
     .nav-btn {
         display: inline-block;
         position: absolute;
         right: 0;
         top: 0;
-        padding-top: 2rem;
+        padding-top: 3rem;
+        padding-right: 1rem;
     }
 
     .nav-btn > label {
@@ -159,11 +165,11 @@ header {
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .nav-title-logo {
-        width: 2.5rem;
+        width: 4rem;
         height: auto;
     }
 
@@ -179,16 +185,17 @@ header {
         top: 100px;
         left: 0;
         overflow: hidden;
+        z-index: 3;
     }
 
     .nav-list-item {
         width: 100%;
         margin-top: 1.5rem;
-        padding-left: 1.5rem;
+        padding-left: 2.5rem;
     }
 
     #nav-check:checked ~ .nav-list {
-        height: fit-content;
+        height: 100vh;
     }
 }
 
@@ -205,12 +212,6 @@ main {
 
 
 /* HERO SECTION */
-
-.hero {
-    height: 70vh;
-    display: flex;
-    align-items: center;
-}
 
 .hero-text {
     flex-basis: 50%;
@@ -266,8 +267,19 @@ main {
 }
 
 @media only screen and (max-width: 999px) {
-    .hero {
-        height: 50vh;
+    main {
+       flex-direction: column;
+       align-items: flex-start;
+    }
+
+    .hero-text {
+        align-items: flex-start;
+        max-width: 640px;
+    }
+
+    .hero-image {
+        align-items: center;
+        flex-basis: 100%;
     }
 
     .hero-text-headline, .text--highlight {
@@ -276,27 +288,19 @@ main {
 }
 
 @media only screen and (max-width: 640px) {
-    .hero {
-        flex-direction: column;
-        align-items: center;
-        height: 100vh;
-    }
 
     .hero-text-headline {
-        margin: 3rem 0 1rem;
+        margin: 3rem 0 0;
     }
 
     .hero-text-headline, .text--highlight {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .hero-text p {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
-    .hero-image {
-        margin-bottom: 5rem;
-    }
 }
 
 /* FOOTER */
@@ -345,11 +349,11 @@ footer {
 }
 
 @media (max-width: 640px) {
-    footer {
+    .footer-row {
         flex-direction: column!important;
         align-items: flex-start;
-        gap: .5rem;
-        padding: 2rem 1rem 1rem;
+        gap: 1rem;
+        padding: 5rem 1rem 1rem;
         margin-bottom: 3rem;
     }
 }
