@@ -45,39 +45,47 @@
     </head>
 
     <body>
-        <header class="header">
-            <nav class="nav">
-                <div class="nav__logo">
-                    <a href="/">  
-                        <img src="../assets/nav__logo.png" alt="New Jobs Friday UK logo" class="nav__logo__image">
-                    </a>
-                    <a href="/"><h2 class="nav__logo__text">New Jobs Friday UK</h2></a>
-                </div>
-                <div class="nav__menu">
-                    <ul class="nav__menu__items">
-                        <li class="nav__menu__item"><a href="https://newjobsfridayuk.substack.com/" target="_blank">Jobs</a></li>
-                        <li class="nav__menu__item"><a href="/about.html">About</a></li>
-                        <li class="nav__menu__item"><a href="mailto:newjobsfriday@gmail.com">Advertise</a></li>
-                        <li class="nav__menu__item"><a href="/faq.html">FAQ</a></li>
+        <div class="wrapper">
+            <header class="header">
+                <nav class="nav">
+                    <input type="checkbox" id="nav-check">
+                    <div class="nav-header">
+                      <div class="nav-title">
+                            <a href="/">  
+                                <img src="../assets/nav__logo.png" alt="New Jobs Friday UK logo" class="nav-title-logo">
+                            </a>
+                            <a href="/"><h2 class="nav-title-text">New Jobs Friday UK</h2></a>
+                      </div>
+                    </div>
+                    <div class="nav-btn">
+                      <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </label>
+                    </div>
+                    <ul class="nav-list">
+                      <li class="nav-list-item"><a href="https://newjobsfridayuk.substack.com/" target="_blank">Jobs</a></li>
+                      <li class="nav-list-item"><a href="/about.html">About</a></li>
+                      <li class="nav-list-item"><a href="mailto:newjobsfriday@gmail.com">Advertise</a></li>
+                      <li class="nav-list-item"><a href="/faq.html">FAQ</a></li>
                     </ul>
-                </div>
-            </nav>
-        </header>
-        <main class="main">
-            <section class="hero">
-                <div class="hero__text">
-                    <div class="hero__text_top">
-                        <h1 class="hero__text__headline">
+                  </nav>
+            </header>
+            <main class="main">
+                <div class="hero-text">
+                    <div class="hero-text-top">
+                        <h1 class="hero-text-headline">
                             Find your 
                             <span class="text--highlight">next role</span> in the 
                             <span class="text--highlight">UK Music Industry</span>.
                         </h1>
-                        <p class="hero__text__description">
+                        <p class="hero-text-description">
                             Receive the latest job offers in the UK music industry in your inbox every Friday at midday.
                         </p>
                     </div>
-                    <div class="hero__text_bottom">
-                        <div class="hero__text__form">
+                    <div class="hero-text_bottom">
+                        <div class="hero-text-form">
                             <div id="custom-substack-embed"></div>
                             <script>
                             window.CustomSubstackWidget = {
@@ -94,41 +102,34 @@
                             };
                             </script>
                             <script src="https://substackapi.com/widget.js" async></script>
-                            <p class="hero__text__socialproof">
+                            <p class="hero-text-socialproof">
                                 Join <b>400+ subscribers</b>, for free.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="hero__image">
-                    <img src="./assets/hero__logo.webp" alt="New Jobs Friday UK logo" class="hero__image__vinyl" width="100%" height="100%">
+                <div class="hero-image">
+                    <img src="./assets/hero__logo.webp" alt="New Jobs Friday UK logo" class="hero-image-vinyl" width="520px" height="100%">
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__row">
-                <div class="nav__menu">
-                    <ul class="nav__menu__items">
-                        <li class="nav__menu__item"><a href="https://newjobsfridayuk.substack.com/" target="_blank">Jobs</a></li>
-                        <li class="nav__menu__item"><a href="/about.html">About</a></li>
-                        <li class="nav__menu__item"><a href="mailto:newjobsfriday@gmail.com">Advertise</a></li>
-                        <li class="nav__menu__item"><a href="/faq.html">FAQ</a></li>
-                    </ul>
+            </main>
+            <footer class="footer">
+                <div class="footer-row">
+                    <p class="footer-copyright">
+                        © <script>document.write(new Date().getFullYear())</script> - New Jobs Friday UK |  Curated with ❤️ and 🎵 in London.</p>
+                    <div class="footer-contact">
+                        <a href="https://www.instagram.com/newjobsfriday/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#333333" viewBox="0 0 256 256"><path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24ZM128,176a48,48,0,1,1,48-48A48.05,48.05,0,0,1,128,176Zm60-96a12,12,0,1,1,12-12A12,12,0,0,1,188,80Zm-28,48a32,32,0,1,1-32-32A32,32,0,0,1,160,128Z"></path></svg>
+                        </a>
+                        <a href="https://newjobsfridayuk.substack.com/" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Substack</title><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+                        </a>
+                        <a href="https://twitter.com/newjobsfriday" target="_blank">
+                            <svg role="img" fill="#333333" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer__row">
-                <p class="footer__copyright">
-                    © <script>document.write(new Date().getFullYear())</script> - New Jobs Friday UK |  Curated with ❤️ and 🎵 in London.</p>
-                <div class="footer__contact">
-                    <a href="https://www.instagram.com/newjobsfriday/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#333333" viewBox="0 0 256 256"><path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24ZM128,176a48,48,0,1,1,48-48A48.05,48.05,0,0,1,128,176Zm60-96a12,12,0,1,1,12-12A12,12,0,0,1,188,80Zm-28,48a32,32,0,1,1-32-32A32,32,0,0,1,160,128Z"></path></svg>
-                    </a>
-                    <a href="https://newjobsfridayuk.substack.com/" target="_blank">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Substack</title><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
-                    </a>
-                </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
         
         <script src="./app.js"></script>
     </body>
